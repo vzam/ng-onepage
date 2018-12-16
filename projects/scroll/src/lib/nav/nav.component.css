@@ -1,0 +1,58 @@
+div {
+  position: absolute;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: .5em;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 3px 3px 15px -2px black;
+  display: inline-block;
+  margin: .5em;
+  cursor: pointer;
+}
+
+.dot:hover:not(.active) {
+  background-color: gray;
+}
+
+.active {
+  background-color: red;
+}
+
+.top {
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  top: 0;
+}
+
+.right {
+  align-items: flex-end;
+  justify-content: column;
+  flex-direction: column;
+  right: 0;
+}
+
+.bottom {
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  bottom: 0;
+}
+
+.left {
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  left: 0;
+}

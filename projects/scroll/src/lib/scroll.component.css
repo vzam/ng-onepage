@@ -1,0 +1,15 @@
+opa-nav {
+
+}
+
+:host(opa-scroll) {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+.scrollable {
+  height: 100%;
+  width: 100%;
+}
+

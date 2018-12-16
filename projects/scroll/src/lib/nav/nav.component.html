@@ -1,0 +1,13 @@
+<div
+  [class.top]="pos === 'top'"
+  [class.right]="pos === 'right'"
+  [class.bottom]="pos === 'bottom'"
+  [class.left]="pos === 'left'"
+>
+  <a
+    *ngFor="let item of _count; let i = index"
+    class="dot"
+    [class.active]="selection === i"
+    (click)="onClick($event, i)"
+  ></a>
+</div>

@@ -1,0 +1,11 @@
+<opa-nav (selected)="onSelected($event)" [selection]="current" [count]="amount" [pos]="navPos"></opa-nav>
+<div
+  class="scrollable"
+  opaScroll
+  [wayPoints]="wayPoints"
+  [target]="target"
+  (focusChanged)="onFocusChanged($event)"
+  (scroll)="onScroll($event)"
+>
+  <ng-content></ng-content>
+</div>
